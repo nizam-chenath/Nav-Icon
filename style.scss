@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background: linear-gradient(to right top, black, #0e0e7d);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    .smallbox{
+        background: linear-gradient(to left bottom, #ffffff00, #ffffffad);
+        width: 200px;
+        height: 200px;
+        backdrop-filter: blur(1rem);
+        display: grid;
+        place-content: center;
+        .fline{
+            width: 100px;
+            height: 20px;
+            margin: 10px 0;
+            background-color: black;
+            transform: translateX(-10px);
+            border-radius: 10px;
+            transition: all 2s ease;
+        } 
+        .sline{
+            width: 100px;
+            height: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            background-color: black;
+            transition: all 1s ease;
+            transform: translateX(10px);
+        } 
+        .tline{
+            width: 100px;
+            border-radius: 10px;
+            height: 20px;
+            transform: translateX(-10px);
+            margin: 10px 0;
+            background-color: black;
+            transition: all 2s ease;
+        }
+        &:hover .sline{
+            transform: translateX(20px);
+        }
+        &:hover .tline{
+            transform: translateX(-20px);
+        }
+    
+       
+    }
+}

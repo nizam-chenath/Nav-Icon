@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background: -webkit-gradient(linear, left bottom, right top, from(black), to(#0e0e7d));
+  background: linear-gradient(to right top, black, #0e0e7d);
+  height: 100vh;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.main .smallbox {
+  background: -webkit-gradient(linear, right top, left bottom, from(#ffffff00), to(#ffffffad));
+  background: linear-gradient(to left bottom, #ffffff00, #ffffffad);
+  width: 200px;
+  height: 200px;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.main .smallbox .fline {
+  width: 100px;
+  height: 20px;
+  margin: 10px 0;
+  background-color: black;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  border-radius: 10px;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.main .smallbox .sline {
+  width: 100px;
+  height: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  background-color: black;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.main .smallbox .tline {
+  width: 100px;
+  border-radius: 10px;
+  height: 20px;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  margin: 10px 0;
+  background-color: black;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.main .smallbox:hover .sline {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.main .smallbox:hover .tline {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+/*# sourceMappingURL=style.css.map */
